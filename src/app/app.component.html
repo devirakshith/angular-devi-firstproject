@@ -1,0 +1,7 @@
+<hello name="{{ name }}"></hello>
+<html>
+  {{title}}
+  <input type = 'text' [value]='name' (change)='display($event.target.value)'>
+  <p>{{name | uppercase | lowercase}}</p>
+  {{title2}} <input [value]='name' ([ngModel]) = 'name' >
+</html>
